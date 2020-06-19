@@ -16,7 +16,7 @@ import javax.annotation.PostConstruct;
 @Transactional
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-//@Primary
+@Primary
 public class CounterTransactionalOptimisticService implements CounterTransactionalService {
 
     private final CounterRepository counterRepository;

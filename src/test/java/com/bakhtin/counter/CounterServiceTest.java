@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 @AutoConfigureTestDatabase
 class CounterServiceTest {
 
-    private static int threadCount = 10;
+    private static int threadCount = 10000;
 
     private final ExecutorService executor = Executors.newFixedThreadPool(threadCount);
     private final CyclicBarrier BARRIER = new CyclicBarrier(threadCount);
